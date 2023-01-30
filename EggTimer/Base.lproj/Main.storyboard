@@ -47,6 +47,9 @@
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Soft"/>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNu-rq-ZM1"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soft_egg" translatesAutoresizingMaskIntoConstraints="NO" id="kho-kQ-eoN" userLabel="Soft Egg ImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="164.33333333333334"/>
@@ -71,6 +74,9 @@
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Medium"/>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nZF-H3-eNt"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_egg" translatesAutoresizingMaskIntoConstraints="NO" id="R5u-cZ-DMz" userLabel="Medium Egg ImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="164.33333333333334"/>
@@ -95,6 +101,9 @@
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Hard"/>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leZ-cT-fld"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_egg" translatesAutoresizingMaskIntoConstraints="NO" id="vsX-on-CaK" userLabel="Hard Egg ImageView">
                                                         <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="164.33333333333334"/>
