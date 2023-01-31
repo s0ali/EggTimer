@@ -23,18 +23,29 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Chj-RF-Amz" userLabel="Title View">
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="219.66666666666666"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like your eggs?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="UZ3-pd-2Ct" userLabel="Title Lable">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iea-2d-aAV">
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="219.66666666666666"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" red="0.38579882079835487" green="0.46219477979327972" blue="0.2660351389846437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like your eggs?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="UZ3-pd-2Ct" userLabel="Title Lable">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="189.66666666666666"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <color key="textColor" red="0.3351508054815005" green="0.40151743444033616" blue="0.23110980726322242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="3 Seconds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="FsR-Kg-avt" userLabel="Time Lable">
+                                                        <rect key="frame" x="0.0" y="189.66666666666666" width="373" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <color key="textColor" red="0.51192621366369684" green="0.61329794400374371" blue="0.35300875497773093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="UZ3-pd-2Ct" secondAttribute="bottom" id="0Av-Dj-40M"/>
-                                            <constraint firstItem="UZ3-pd-2Ct" firstAttribute="top" secondItem="Chj-RF-Amz" secondAttribute="top" id="EEi-KW-lWI"/>
-                                            <constraint firstItem="UZ3-pd-2Ct" firstAttribute="leading" secondItem="Chj-RF-Amz" secondAttribute="leading" id="Hdu-1U-R5K"/>
-                                            <constraint firstAttribute="trailing" secondItem="UZ3-pd-2Ct" secondAttribute="trailing" id="Z8J-Hc-ixD"/>
+                                            <constraint firstItem="iea-2d-aAV" firstAttribute="leading" secondItem="Chj-RF-Amz" secondAttribute="leading" id="GOA-iL-aHj"/>
+                                            <constraint firstAttribute="trailing" secondItem="iea-2d-aAV" secondAttribute="trailing" id="TGB-ES-JTW"/>
+                                            <constraint firstAttribute="bottom" secondItem="iea-2d-aAV" secondAttribute="bottom" id="eRM-tE-E9n"/>
+                                            <constraint firstItem="iea-2d-aAV" firstAttribute="top" secondItem="Chj-RF-Amz" secondAttribute="top" id="nAp-hd-hVd"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MN9-1S-Em3" userLabel="Eggs Stack View">
@@ -155,6 +166,8 @@
                     </view>
                     <connections>
                         <outlet property="progressView" destination="1d7-0v-Gv3" id="pvS-vc-6sO"/>
+                        <outlet property="timeLable" destination="FsR-Kg-avt" id="Emb-hL-phB"/>
+                        <outlet property="titleLable" destination="UZ3-pd-2Ct" id="SSj-qb-GMr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
