@@ -39,18 +39,19 @@ class ViewController: UIViewController {
     }
     
     func startTimer(time: Int) -> Timer {
-        var counter = time * 100
+        var timeInMenuts = time * 60
+        var counter = timeInMenuts * 100
         progressView.progress = 1
         
         return Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (Timer) in
             if counter > 0 {
+//                print("\((counter/100)/60) minuts \((counter/100)%60) seconds left")
+                self.timeLable.text = "\((counter/100)/60) : \((counter/100)%60)"
+                
+                self.progressView.progress = Float(counter) / Float(timeInMenuts * 100)
+//                print(self.progressView.progress)
+                
                 counter -= 1
-                
-                print("\(counter/100) seconds left")
-                self.timeLable.text = "\((counter/100) + 1) Seconds"
-                
-                self.progressView.progress = Float(counter) / Float(time * 100)
-                print(self.progressView.progress)
             } else {
                 Timer.invalidate()
                 print("DONE!!!")
